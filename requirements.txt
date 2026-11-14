@@ -5,3 +5,4 @@ pypdf>=6,<8
 pillow>=11,<14
 scipy>=1.12,<2
 certifi>=2025.1
+tiktoken==0.14.0

@@ -67,3 +67,19 @@ python scripts/benchmark.py agent-test --suite bonus --test-version v2 --lock re
 Khóa v2 kiểm tra code/config/extraction và bộ test v2. Không sửa code ngữ nghĩa để chạy lại v1 dưới tên đánh giá độc lập. Nhãn review, lý do và hash trace gốc được giữ riêng; không sửa câu trả lời hay loại lỗi khỏi mẫu số.
 
 Hai nửa bản đồ đã có snapshot trích xuất được đối chiếu ở `data/jpf2021_map_extraction.json` (dữ liệu Japan Foundation có ghi công). `prepare_bonus.py` kiểm tra SHA PDF rồi dùng snapshot này để tái tạo đúng index đã đánh giá, không cần gọi lại vision API. `transcribe_maps.py` chỉ dành cho thí nghiệm extraction mới; không chạy để thay snapshot của lần đánh giá đã khóa.
+
+## Hiển thị chi phí token
+
+Panel “Chi phí token” nằm dưới thanh alpha. Nó hiển thị input, cached input, output, tổng token và số lượt GPT của câu đã gọi API; tiền tính theo đơn giá chuẩn có ghi nguồn. Khi chưa có trace trùng câu hỏi/kho, UI ghi “Chưa gọi GPT”.
+
+Hai phương án giả định: (1) gửi toàn bộ text của kho trong một lần, (2) chỉ gửi câu hỏi. Đếm local bằng tiktoken `o200k_base`, cộng instruction/câu hỏi và khoảng overhead, giả định 300 output tokens. Phương án toàn tài liệu có cả giá chưa cache và giá nếu toàn bộ text được cache; không tính ảnh nên không so sánh chất lượng trực quan tương đương. Không gọi GPT để tính các giả định. CPU/điện và ingestion chưa được đo; đây không phải hóa đơn.
+
+Dependency mới: `tiktoken==0.14.0` (cài theo requirements). Máy hiện tại có bản riêng ở `.local/cost-deps`, không sửa venv Day 06. Tokenizer cần tải bảng mã lần đầu, sau đó dùng cache `.local/tiktoken`; số token corpus theo hash tại `.local/corpus_costs.json`. Tính năng chỉ bổ sung hiển thị qua `src/costs.py` và `src/web.py`, không thay agent/retrieval/prompt đã benchmark.
+
+## Bản vá grounding v3 (sau benchmark v2)
+
+Lỗi thực tế: query “TỊNH nếu ko có thì viết Hello world bằng c++” đã tìm được 並/TỊNH ở trang 372 nhưng vừa phủ nhận vừa sinh chương trình ngoài tài liệu. Thêm policy phạm vi chung cho cả hai kho và `src/grounding.py`: kiểm tra code không có trong context, phủ nhận nhãn Hán Việt khớp đúng dấu, và đơn vị lớp/người bị trộn. Câu finish vi phạm bị trả lại cho model sửa, không được đưa vào câu trả lời cuối; trace giữ cả nháp bị loại và lý do.
+
+Đã thử lại UI/model thật: “TỊNH: Kanji 「並」.”, citation trang 372; bước kiểm tra đã thực sự chặn code trong nháp. Thử thêm âm Hán Việt TỊNH → 並, TỈNH → 省 (nguồn có nhiều chữ cùng âm), yêu cầu viết Python ngoài phạm vi → từ chối. Một regression về “số lớp” chỉ trả số người học với đúng đơn vị, còn thiếu làm rõ metric, nên không chấm là đáp án đầy đủ. Các kiểm tra này là regression sau sửa, không phải holdout mới. Tổng 34 unit tests pass.
+
+Điểm benchmark 29/30 là kết quả lịch sử của v2, không tuyên bố v3 có cùng điểm độc lập. Agent v2 gốc đúng hash được giữ ở `results/private/versions/agent-v2.py` để tái lập trong checkout riêng cùng snapshot nguồn/config. Không sửa hash khóa cũ để giả kết quả mới. Kiểm tra hiện tại chỉ phủ một số loại lỗi, không thay đối chiếu ngữ nghĩa đầy đủ.

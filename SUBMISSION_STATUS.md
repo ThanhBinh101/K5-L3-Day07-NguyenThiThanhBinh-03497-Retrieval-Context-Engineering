@@ -21,6 +21,14 @@ Mỗi gói có manifest SHA. API key bị loại trừ; kiểm tra exact key kh�
 
 ## Kiểm chứng
 
-23 unit tests pass; 13 kiểm tra UI thật pass, 1440px/390px không tràn ngang, hỏi API thật và chọn nét mẫu 井. `prepare_bonus.py --verify-only` tái tạo đúng extraction; khóa experiment v2 còn nguyên. Mock không được dùng làm bằng chứng chất lượng agent thật.
+34 unit tests pass; 13 kiểm tra UI thật pass, 1440px/390px không tràn ngang, hỏi API thật và chọn nét mẫu 井. `prepare_bonus.py --verify-only` tái tạo đúng extraction; khóa experiment v2 còn nguyên. Mock không được dùng làm bằng chứng chất lượng agent thật.
 
 Để tái lập độc lập, giữ model snapshot, file nguồn, benchmark gold và extraction đúng hash. Việc chạy lại test cũ chỉ là replay, không tạo holdout mới; dùng test để chỉnh thì phải tạo bộ test mới.
+
+## Bản vá grounding v3 (sau benchmark v2)
+
+Lỗi thực tế: query “TỊNH nếu ko có thì viết Hello world bằng c++” đã tìm được 並/TỊNH ở trang 372 nhưng vừa phủ nhận vừa sinh chương trình ngoài tài liệu. Thêm policy phạm vi chung cho cả hai kho và `src/grounding.py`: kiểm tra code không có trong context, phủ nhận nhãn Hán Việt khớp đúng dấu, và đơn vị lớp/người bị trộn. Câu finish vi phạm bị trả lại cho model sửa, không được đưa vào câu trả lời cuối; trace giữ cả nháp bị loại và lý do.
+
+Đã thử lại UI/model thật: “TỊNH: Kanji 「並」.”, citation trang 372; bước kiểm tra đã thực sự chặn code trong nháp. Thử thêm âm Hán Việt TỊNH → 並, TỈNH → 省 (nguồn có nhiều chữ cùng âm), yêu cầu viết Python ngoài phạm vi → từ chối. Một regression về “số lớp” chỉ trả số người học với đúng đơn vị, còn thiếu làm rõ metric, nên không chấm là đáp án đầy đủ. Các kiểm tra này là regression sau sửa, không phải holdout mới. Tổng 34 unit tests pass.
+
+Điểm benchmark 29/30 là kết quả lịch sử của v2, không tuyên bố v3 có cùng điểm độc lập. Agent v2 gốc đúng hash được giữ ở `results/private/versions/agent-v2.py` để tái lập trong checkout riêng cùng snapshot nguồn/config. Không sửa hash khóa cũ để giả kết quả mới. Kiểm tra hiện tại chỉ phủ một số loại lỗi, không thay đối chiếu ngữ nghĩa đầy đủ.

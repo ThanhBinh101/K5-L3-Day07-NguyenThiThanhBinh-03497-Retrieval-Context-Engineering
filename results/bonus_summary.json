@@ -1,5 +1,5 @@
 {
-  "status": "Đạt ngưỡng benchmark bonus",
+  "status": "Kết quả lịch sử · pipeline v2",
   "final_test_version": "v2",
   "dev": {
     "queries": 18,
@@ -260,5 +260,7 @@
   "threshold_met": true,
   "all_cases_in_denominator": true,
   "independence": "V1 inspected and used for error analysis; v2 fresh questions locked before execution. V1 is NOT independent for final revised pipeline.",
-  "review_notice": "AI-assisted original-source review, not student/human sign-off; instructor assigns final grade."
+  "review_notice": "AI-assisted original-source review, not student/human sign-off; instructor assigns final grade.",
+  "current_pipeline_version": "v3-grounding-guard",
+  "current_pipeline_validation": "Regression checks only; no new independent holdout for v3. V2 scores remain historical and are not relabeled as v3."
 }

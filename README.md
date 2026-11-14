@@ -14,12 +14,16 @@
 | Kanji test, cấu hình chọn | 7/7 (5 có đáp án + 2 thiếu bằng chứng) |
 | Bonus test v1, giữ nguyên trước sửa | 26/30 (86,7%) |
 | Bonus test độc lập v2 sau khi khóa lại | **29/30 (96,7%)**, đạt ngưỡng ≥90% |
-| Unit tests | 23 pass |
+| Unit tests | 34 pass |
 | UI Chrome | 13 kiểm tra pass; desktop/mobile |
 
 [Báo cáo đầy đủ](report/individual/2A202603497_NguyenThiThanhBinh.md) · [Số liệu bonus](results/bonus_summary.json) · [So sánh retrieval](results/retrieval_summary.json) · [Quy trình benchmark](benchmark/README.md)
 
 Nhãn chất lượng do Codex AI đối chiếu nguồn gốc, không giả là học viên đã ký xác nhận. V1 được giữ đủ kết quả và lỗi; v2 dùng câu hỏi mới, khóa trước thực thi. Điểm cuối do giảng viên chấm. Dữ liệu có trích đoạn, gold, trace, PDF và key giữ local; gói code và minh chứng riêng được mô tả ở `SUBMISSION_STATUS.md`.
+
+## Bản vá grounding v3
+
+Đã sửa lỗi câu “TỊNH nếu ko có thì viết Hello world bằng c++”: trả 並 — TỊNH, trang 372; chặn code ngoài evidence và phủ nhận nhãn Hán Việt đã tìm thấy. 34 unit tests pass, kiểm tra live trên câu đã báo lỗi, phân biệt dấu và yêu cầu lập trình ngoài phạm vi. Các kết quả 7/7, 29/30 ở trên thuộc pipeline v2 đã khóa; không đổi tên thành điểm của v3. Xem `results/grounding_patch.json`. Câu hỏi mơ hồ về đơn vị vẫn cần cải thiện; đây chưa phải bộ kiểm chứng ngữ nghĩa đầy đủ.
 
 ## Đề bài gốc
 

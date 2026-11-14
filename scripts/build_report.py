@@ -111,7 +111,7 @@ Ghi công KanjiVG: Ulrich Apel và cộng tác viên, CC BY-SA 3.0; snapshot ở
 
 ## 7. Kiểm tra và bàn giao
 
-- **23 unit tests pass**, bao gồm starter mock tests và kiểm tra alpha, lexical không dấu/Japanese, input, context budget/dedup, giới hạn loop và lỗi API. Mock chỉ kiểm tra code.
+- **34 unit tests pass**, bao gồm starter mock tests và kiểm tra alpha, lexical không dấu/Japanese, input, context budget/dedup, giới hạn loop và lỗi API. Mock chỉ kiểm tra code.
 - **{len(ui['checks'])} kiểm tra UI pass** bằng Chrome trên server thật: slider 0/0.1/1, một ô search, 11 mức quét, nguồn PDF, hỏi API thật, nét vẽ/mẫu và hình gốc, mobile 390px không tràn ngang, input/Origin và route secret. Trang metrics cũng kiểm tra 1440px/390px.
 - Kiểm tra extraction tái tạo đúng hash, frozen benchmark và experiment lock còn nguyên.
 - Cách chạy: `docs/RUN.md`; tổng hợp số liệu: `results/agent_summary.json`, `results/bonus_summary.json`, `results/retrieval_summary.json`; nhãn từng câu và packet đối chiếu: `results/private/reviews/`, `results/private/REVIEW_PACKET.md`.

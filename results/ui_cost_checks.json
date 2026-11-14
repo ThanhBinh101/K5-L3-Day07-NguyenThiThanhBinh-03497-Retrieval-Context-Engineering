@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-11-14T14:53:54.912273+07:00",
+  "passed": true,
+  "checks": [
+    "API usage matches stored trace; no new model call needed",
+    "cached input billed once at cached rate",
+    "full corpus counted once per physical page, no overlapping chunks",
+    "cold and hypothetical fully cached document costs displayed separately",
+    "question-only scenario explicitly lacks source evidence",
+    "query change shows no measured GPT call when no matching trace",
+    "existing query/corpus/alpha restored in user tab",
+    "experiment_lock_v2 unchanged"
+  ],
+  "example": {
+    "actual_total_tokens": 11556,
+    "actual_usd_estimate": 0.00748215,
+    "full_text_usd_estimate": 0.0894525,
+    "full_text_cached_usd_estimate": 0.01020952,
+    "question_only_usd_estimate": 0.00140475
+  },
+  "counterfactuals_measured": false,
+  "extra_gpt_calls_for_cost_feature": 0,
+  "screenshot": "results/private/ui-token-costs.png",
+  "unit_tests": 27
+}

@@ -1,0 +1,51 @@
+{
+  "created_at": "2026-11-14T15:25:38.107171+07:00",
+  "pipeline_version": "v3-grounding-guard",
+  "unit_tests": 34,
+  "reported_case": {
+    "query": "TỊNH nếu ko có thì viết Hello world bằng c++",
+    "answer": "TỊNH: Kanji 「並」.",
+    "source_page": 372,
+    "live_rejected_draft": true,
+    "trace_id": "630392209a7448229f7fa690634db61d"
+  },
+  "additional_live_regressions": {
+    "exact-label": {
+      "status": "answered",
+      "answer": "Âm Hán Việt **TỊNH** là chữ **並**.",
+      "pages": [
+        372
+      ]
+    },
+    "different-tone": {
+      "status": "answered",
+      "answer": "TỈNH là chữ 省.",
+      "pages": [
+        426,
+        426
+      ]
+    },
+    "out-of-scope": {
+      "status": "abstain",
+      "answer": "Mình không thể viết chương trình Python theo yêu cầu này vì bạn đã yêu cầu kho cần dùng là kanji, và theo phạm vi công cụ mình chỉ được trả lời dựa trên tài liệu trong kho đã chọn. Kết quả tìm kiếm không cung cấp bằng chứng liên quan đến việc viết chương trình Python tính tổng 1 đến 10, nên mình phải từ chối.",
+      "pages": [
+        267
+      ]
+    },
+    "units": {
+      "status": "answered",
+      "answer": "Mexico có 14,552 người học tiếng Nhật.",
+      "pages": [
+        3,
+        3
+      ],
+      "assessment": "Unit no longer mislabeled; response supplies learners rather than fully clarifying requested class count. Not counted as full question-answer success."
+    }
+  },
+  "independent_benchmark": false,
+  "prior_benchmark": "v2 results retained as historical; not relabeled for v3.",
+  "previous_agent_sha256": "8c9ba39f903dbc09a0d4476854ca11a0838071b024a8704fcfa485f1bf492bf1",
+  "current_agent_sha256": "3c55b92762357b250038f2b02c30e8378cfa19dc68bf4bd5380e620edd20eff2",
+  "grounding_checks_sha256": "053db2fe6f063c992e0da7e7ca917e7566b4e1711e91dde89f5e20dce806bc52",
+  "limitations": "Focused code/label checks plus prompt policy, not a complete semantic verifier. More ambiguous unit questions remain a limitation."
+}

@@ -12,6 +12,10 @@ test_cli_uses_requested_split_only (test_baseline.BaselineTests.test_cli_uses_re
 test_convert_day6_and_preserve_filter (test_baseline.BaselineTests.test_convert_day6_and_preserve_filter) ... ok
 test_gold_alternative_and_wrong_page (test_baseline.BaselineTests.test_gold_alternative_and_wrong_page) ... ok
 test_rank_and_evidence (test_baseline.BaselineTests.test_rank_and_evidence) ... ok
+test_cached_tokens_are_not_charged_twice (test_costs.CostTests.test_cached_tokens_are_not_charged_twice) ... ok
+test_impossible_cached_count_rejected (test_costs.CostTests.test_impossible_cached_count_rejected) ... ok
+test_missing_trace_and_unknown_price (test_costs.CostTests.test_missing_trace_and_unknown_price) ... ok
+test_repeated_calls_and_reasoning_not_double_counted (test_costs.CostTests.test_repeated_calls_and_reasoning_not_double_counted) ... ok
 test_api_error_not_replaced_by_fake_answer (test_day07.LoopTests.test_api_error_not_replaced_by_fake_answer) ... ok
 test_ungrounded_finish_cannot_pass (test_day07.LoopTests.test_ungrounded_finish_cannot_pass) ... ok
 test_alpha_endpoints_and_invalid (test_day07.SearchTests.test_alpha_endpoints_and_invalid) ... ok
@@ -21,8 +25,15 @@ test_normalization_constant_is_zero (test_day07.SearchTests.test_normalization_c
 test_strokes_reject_nonfinite_and_oversize (test_day07.SearchTests.test_strokes_reject_nonfinite_and_oversize) ... ok
 test_unknown_query_has_no_lexical_evidence (test_day07.SearchTests.test_unknown_query_has_no_lexical_evidence) ... ok
 test_fixture_gold_resolves (test_fixture.FixtureTest.test_fixture_gold_resolves) ... ok
+test_accents_are_not_conflated (test_grounding.GroundingTests.test_accents_are_not_conflated) ... ok
+test_actual_reported_failure_is_rejected (test_grounding.GroundingTests.test_actual_reported_failure_is_rejected) ... ok
+test_missing_fact_about_existing_character_can_be_declined (test_grounding.GroundingTests.test_missing_fact_about_existing_character_can_be_declined) ... ok
+test_mixed_learner_class_unit_rejected (test_grounding.GroundingTests.test_mixed_learner_class_unit_rejected) ... ok
+test_mixed_request_can_still_answer_supported_lookup (test_grounding.GroundingTests.test_mixed_request_can_still_answer_supported_lookup) ... ok
+test_program_without_fences_is_also_rejected (test_grounding.GroundingTests.test_program_without_fences_is_also_rejected) ... ok
+test_supported_code_is_not_rejected_as_unsupported (test_grounding.GroundingTests.test_supported_code_is_not_rejected_as_unsupported) ... ok
 
 ----------------------------------------------------------------------
-Ran 23 tests in 0.049s
+Ran 34 tests in 0.055s
 
 OK

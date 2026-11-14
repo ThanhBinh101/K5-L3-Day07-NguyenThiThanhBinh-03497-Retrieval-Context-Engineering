@@ -102,7 +102,7 @@ Ghi công KanjiVG: Ulrich Apel và cộng tác viên, CC BY-SA 3.0; snapshot ở
 
 ## 7. Kiểm tra và bàn giao
 
-- **23 unit tests pass**, bao gồm starter mock tests và kiểm tra alpha, lexical không dấu/Japanese, input, context budget/dedup, giới hạn loop và lỗi API. Mock chỉ kiểm tra code.
+- **34 unit tests pass**, bao gồm starter mock tests và kiểm tra alpha, lexical không dấu/Japanese, input, context budget/dedup, giới hạn loop và lỗi API. Mock chỉ kiểm tra code.
 - **13 kiểm tra UI pass** bằng Chrome trên server thật: slider 0/0.1/1, một ô search, 11 mức quét, nguồn PDF, hỏi API thật, nét vẽ/mẫu và hình gốc, mobile 390px không tràn ngang, input/Origin và route secret. Trang metrics cũng kiểm tra 1440px/390px.
 - Kiểm tra extraction tái tạo đúng hash, frozen benchmark và experiment lock còn nguyên.
 - Cách chạy: `docs/RUN.md`; tổng hợp số liệu: `results/agent_summary.json`, `results/bonus_summary.json`, `results/retrieval_summary.json`; nhãn từng câu và packet đối chiếu: `results/private/reviews/`, `results/private/REVIEW_PACKET.md`.
@@ -111,3 +111,17 @@ Ghi công KanjiVG: Ulrich Apel và cộng tác viên, CC BY-SA 3.0; snapshot ở
 ## 8. Giới hạn
 
 Bộ test được thiết kế theo nhiệm vụ minh bạch, nhiều câu có ID bảng/hình; độ khó không đại diện truy vấn mở mọi ngôn ngữ. Bản đồ được dùng làm evidence ảnh có thông tin, không đánh đồng với ảnh trang trí. Embedding nhỏ và budget có thể bỏ sót; bảng tiếp trang vẫn là lỗi đã đo. Điểm tương đồng/shape distance không phải xác suất. Nhãn AI đã ghi rõ loại chấm; học viên cần đọc packet để tự giải thích và xác nhận trước nộp.
+
+## Bổ sung UI: token và chi phí so với bỏ RAG
+
+`src/costs.py` cộng usage input/cache/output của mọi model call; UI hiện chi phí ước tính và số lượt gọi. Ví dụ trace Mexico đã có: 11.319 input (3.072 cache), 237 output, tổng 11.556 token / 5 calls, ~$0.00748.
+
+Kho report có 117.397 text tokens theo o200k_base. Với cùng câu hỏi, gửi toàn bộ text một lượt, không ảnh, giả định 300 output: ~$0.08945 nếu chưa cache, ~$0.01021 nếu toàn bộ document text đã cache. Chỉ hỏi GPT không gửi tài liệu: ~$0.00140, nhưng không có bằng chứng từ kho. Hai phương án này chưa được gọi API/chấm chất lượng; không coi đây là ablation đo tác động riêng từng bước. Giá theo nguồn chính thức GPT-5.4 mini đã dẫn; tổng tiền không phải hóa đơn. Thêm 4 unit tests về cache, nhiều lượt gọi, model chưa có giá và input không hợp lệ; tổng 27 pass. Agent/retrieval/model/prompt và các hash của thí nghiệm v2 giữ nguyên.
+
+## Bản vá grounding v3 (sau benchmark v2)
+
+Lỗi thực tế: query “TỊNH nếu ko có thì viết Hello world bằng c++” đã tìm được 並/TỊNH ở trang 372 nhưng vừa phủ nhận vừa sinh chương trình ngoài tài liệu. Thêm policy phạm vi chung cho cả hai kho và `src/grounding.py`: kiểm tra code không có trong context, phủ nhận nhãn Hán Việt khớp đúng dấu, và đơn vị lớp/người bị trộn. Câu finish vi phạm bị trả lại cho model sửa, không được đưa vào câu trả lời cuối; trace giữ cả nháp bị loại và lý do.
+
+Đã thử lại UI/model thật: “TỊNH: Kanji 「並」.”, citation trang 372; bước kiểm tra đã thực sự chặn code trong nháp. Thử thêm âm Hán Việt TỊNH → 並, TỈNH → 省 (nguồn có nhiều chữ cùng âm), yêu cầu viết Python ngoài phạm vi → từ chối. Một regression về “số lớp” chỉ trả số người học với đúng đơn vị, còn thiếu làm rõ metric, nên không chấm là đáp án đầy đủ. Các kiểm tra này là regression sau sửa, không phải holdout mới. Tổng 34 unit tests pass.
+
+Điểm benchmark 29/30 là kết quả lịch sử của v2, không tuyên bố v3 có cùng điểm độc lập. Agent v2 gốc đúng hash được giữ ở `results/private/versions/agent-v2.py` để tái lập trong checkout riêng cùng snapshot nguồn/config. Không sửa hash khóa cũ để giả kết quả mới. Kiểm tra hiện tại chỉ phủ một số loại lỗi, không thay đối chiếu ngữ nghĩa đầy đủ.

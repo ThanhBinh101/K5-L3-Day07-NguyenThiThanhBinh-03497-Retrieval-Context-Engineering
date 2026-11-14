@@ -10,6 +10,7 @@ from .retrieval import Retriever,validate_alpha
 from .bonus import ReportRetriever,render_page
 from .handwriting import HandwritingMatcher
 from .agent import Agent
+from .costs import CostEstimator
 
 class Service:
     def __init__(self):
@@ -17,10 +18,14 @@ class Service:
         self.retrievers={'kanji':self.kanji,'report':self.report}
         self.matcher=HandwritingMatcher(PRIVATE/'templates.json')
         self.inventory={p['page']:p for p in read_json(PRIVATE/'inventory.json')}
+        self.costs=None;self.cost_error=None
         self.loading=True;self.error=None;self.agent_lock=threading.Lock()
         threading.Thread(target=self.load,daemon=True).start()
     def load(self):
-        try:self.kanji.load_dense();self.report.load_dense()
+        try:
+            self.kanji.load_dense();self.report.load_dense()
+            try:self.costs=CostEstimator()
+            except Exception as e:self.cost_error=str(e)
         except Exception as e:self.error=str(e)
         finally:self.loading=False
     def status(self):
@@ -58,7 +63,10 @@ class Service:
         if not self.agent_lock.acquire(blocking=False):raise ValueError('Agent đang xử lý câu trước. Vui lòng chờ.')
         try:
             a=Agent(self.kanji,self.report,render_page)
-            return a.run(p.get('query'),p.get('alpha',.5),corpus=p.get('corpus','kanji'))
+            result=a.run(p.get('query'),p.get('alpha',.5),corpus=p.get('corpus','kanji'))
+            if self.costs:
+                result['cost_comparison']=self.costs.compare(p.get('corpus','kanji'),p.get('query',''),result)
+            return result
         finally:self.agent_lock.release()
     def recognize(self,p):
         result=self.matcher.recognize(p.get('strokes'))
@@ -86,6 +94,11 @@ class Handler(BaseHTTPRequestHandler):
         u=urlsplit(self.path)
         try:
             if u.path=='/api/status':return self.send(200,self.server.service.status())
+            if u.path=='/api/costs':
+                service=self.server.service
+                if not service.costs:return self.send(503,{'error':service.cost_error or 'Đang chuẩn bị bộ đếm token.'})
+                q=parse_qs(u.query)
+                return self.send(200,service.costs.compare(q.get('corpus',['kanji'])[0],q.get('query',[''])[0]))
             if u.path=='/api/metrics':
                 names=['retrieval_summary.json','selection.json','agent_summary.json','bonus_summary.json']
                 return self.send(200,{n:read_json(ROOT/'results'/n) for n in names if (ROOT/'results'/n).exists()})
