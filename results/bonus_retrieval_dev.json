@@ -1,0 +1,622 @@
+{
+  "created_at": "2026-11-14T11:44:01.958669+07:00",
+  "warmup_seconds": 26.140738999994937,
+  "configurations": [
+    {
+      "alpha": 0.0,
+      "budget_chars_per_search": 2400,
+      "queries": 18,
+      "Hit@1": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Evidence Hit@3": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Complete Evidence@3": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Context Evidence Rate": {
+        "n": 11,
+        "N": 15,
+        "rate": 0.7333333333333333
+      },
+      "median_ms": 1.665,
+      "cost_usd": 0,
+      "note": "Page-level evidence hit; multi-hop complete requires all gold pages. Citation support needs original review."
+    },
+    {
+      "alpha": 0.0,
+      "budget_chars_per_search": 4800,
+      "queries": 18,
+      "Hit@1": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Evidence Hit@3": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Complete Evidence@3": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Context Evidence Rate": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "median_ms": 0.215,
+      "cost_usd": 0,
+      "note": "Page-level evidence hit; multi-hop complete requires all gold pages. Citation support needs original review."
+    },
+    {
+      "alpha": 0.1,
+      "budget_chars_per_search": 2400,
+      "queries": 18,
+      "Hit@1": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Evidence Hit@3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "Complete Evidence@3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "Context Evidence Rate": {
+        "n": 11,
+        "N": 15,
+        "rate": 0.7333333333333333
+      },
+      "median_ms": 23.71,
+      "cost_usd": 0,
+      "note": "Page-level evidence hit; multi-hop complete requires all gold pages. Citation support needs original review."
+    },
+    {
+      "alpha": 0.1,
+      "budget_chars_per_search": 4800,
+      "queries": 18,
+      "Hit@1": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Evidence Hit@3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "Complete Evidence@3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "Context Evidence Rate": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "median_ms": 0.25,
+      "cost_usd": 0,
+      "note": "Page-level evidence hit; multi-hop complete requires all gold pages. Citation support needs original review."
+    },
+    {
+      "alpha": 0.2,
+      "budget_chars_per_search": 2400,
+      "queries": 18,
+      "Hit@1": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Evidence Hit@3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "Complete Evidence@3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "Context Evidence Rate": {
+        "n": 11,
+        "N": 15,
+        "rate": 0.7333333333333333
+      },
+      "median_ms": 0.24,
+      "cost_usd": 0,
+      "note": "Page-level evidence hit; multi-hop complete requires all gold pages. Citation support needs original review."
+    },
+    {
+      "alpha": 0.2,
+      "budget_chars_per_search": 4800,
+      "queries": 18,
+      "Hit@1": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Evidence Hit@3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "Complete Evidence@3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "Context Evidence Rate": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "median_ms": 0.24,
+      "cost_usd": 0,
+      "note": "Page-level evidence hit; multi-hop complete requires all gold pages. Citation support needs original review."
+    },
+    {
+      "alpha": 0.3,
+      "budget_chars_per_search": 2400,
+      "queries": 18,
+      "Hit@1": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Evidence Hit@3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "Complete Evidence@3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "Context Evidence Rate": {
+        "n": 11,
+        "N": 15,
+        "rate": 0.7333333333333333
+      },
+      "median_ms": 0.24,
+      "cost_usd": 0,
+      "note": "Page-level evidence hit; multi-hop complete requires all gold pages. Citation support needs original review."
+    },
+    {
+      "alpha": 0.3,
+      "budget_chars_per_search": 4800,
+      "queries": 18,
+      "Hit@1": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Evidence Hit@3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "Complete Evidence@3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "Context Evidence Rate": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "median_ms": 0.24,
+      "cost_usd": 0,
+      "note": "Page-level evidence hit; multi-hop complete requires all gold pages. Citation support needs original review."
+    },
+    {
+      "alpha": 0.4,
+      "budget_chars_per_search": 2400,
+      "queries": 18,
+      "Hit@1": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Evidence Hit@3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "Complete Evidence@3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "Context Evidence Rate": {
+        "n": 11,
+        "N": 15,
+        "rate": 0.7333333333333333
+      },
+      "median_ms": 0.24,
+      "cost_usd": 0,
+      "note": "Page-level evidence hit; multi-hop complete requires all gold pages. Citation support needs original review."
+    },
+    {
+      "alpha": 0.4,
+      "budget_chars_per_search": 4800,
+      "queries": 18,
+      "Hit@1": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Evidence Hit@3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "Complete Evidence@3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "Context Evidence Rate": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "median_ms": 0.24,
+      "cost_usd": 0,
+      "note": "Page-level evidence hit; multi-hop complete requires all gold pages. Citation support needs original review."
+    },
+    {
+      "alpha": 0.5,
+      "budget_chars_per_search": 2400,
+      "queries": 18,
+      "Hit@1": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Evidence Hit@3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "Complete Evidence@3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "Context Evidence Rate": {
+        "n": 11,
+        "N": 15,
+        "rate": 0.7333333333333333
+      },
+      "median_ms": 0.24,
+      "cost_usd": 0,
+      "note": "Page-level evidence hit; multi-hop complete requires all gold pages. Citation support needs original review."
+    },
+    {
+      "alpha": 0.5,
+      "budget_chars_per_search": 4800,
+      "queries": 18,
+      "Hit@1": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Evidence Hit@3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "Complete Evidence@3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "Context Evidence Rate": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "median_ms": 0.24,
+      "cost_usd": 0,
+      "note": "Page-level evidence hit; multi-hop complete requires all gold pages. Citation support needs original review."
+    },
+    {
+      "alpha": 0.6,
+      "budget_chars_per_search": 2400,
+      "queries": 18,
+      "Hit@1": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Evidence Hit@3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "Complete Evidence@3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "Context Evidence Rate": {
+        "n": 11,
+        "N": 15,
+        "rate": 0.7333333333333333
+      },
+      "median_ms": 0.24,
+      "cost_usd": 0,
+      "note": "Page-level evidence hit; multi-hop complete requires all gold pages. Citation support needs original review."
+    },
+    {
+      "alpha": 0.6,
+      "budget_chars_per_search": 4800,
+      "queries": 18,
+      "Hit@1": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Evidence Hit@3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "Complete Evidence@3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "Context Evidence Rate": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "median_ms": 0.24,
+      "cost_usd": 0,
+      "note": "Page-level evidence hit; multi-hop complete requires all gold pages. Citation support needs original review."
+    },
+    {
+      "alpha": 0.7,
+      "budget_chars_per_search": 2400,
+      "queries": 18,
+      "Hit@1": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Evidence Hit@3": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Complete Evidence@3": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Context Evidence Rate": {
+        "n": 11,
+        "N": 15,
+        "rate": 0.7333333333333333
+      },
+      "median_ms": 0.24,
+      "cost_usd": 0,
+      "note": "Page-level evidence hit; multi-hop complete requires all gold pages. Citation support needs original review."
+    },
+    {
+      "alpha": 0.7,
+      "budget_chars_per_search": 4800,
+      "queries": 18,
+      "Hit@1": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Evidence Hit@3": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Complete Evidence@3": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Context Evidence Rate": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "median_ms": 0.24,
+      "cost_usd": 0,
+      "note": "Page-level evidence hit; multi-hop complete requires all gold pages. Citation support needs original review."
+    },
+    {
+      "alpha": 0.8,
+      "budget_chars_per_search": 2400,
+      "queries": 18,
+      "Hit@1": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Evidence Hit@3": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Complete Evidence@3": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Context Evidence Rate": {
+        "n": 11,
+        "N": 15,
+        "rate": 0.7333333333333333
+      },
+      "median_ms": 0.24,
+      "cost_usd": 0,
+      "note": "Page-level evidence hit; multi-hop complete requires all gold pages. Citation support needs original review."
+    },
+    {
+      "alpha": 0.8,
+      "budget_chars_per_search": 4800,
+      "queries": 18,
+      "Hit@1": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Evidence Hit@3": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Complete Evidence@3": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Context Evidence Rate": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "median_ms": 0.24,
+      "cost_usd": 0,
+      "note": "Page-level evidence hit; multi-hop complete requires all gold pages. Citation support needs original review."
+    },
+    {
+      "alpha": 0.9,
+      "budget_chars_per_search": 2400,
+      "queries": 18,
+      "Hit@1": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Evidence Hit@3": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Complete Evidence@3": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Context Evidence Rate": {
+        "n": 11,
+        "N": 15,
+        "rate": 0.7333333333333333
+      },
+      "median_ms": 0.24,
+      "cost_usd": 0,
+      "note": "Page-level evidence hit; multi-hop complete requires all gold pages. Citation support needs original review."
+    },
+    {
+      "alpha": 0.9,
+      "budget_chars_per_search": 4800,
+      "queries": 18,
+      "Hit@1": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Evidence Hit@3": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Complete Evidence@3": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Context Evidence Rate": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "median_ms": 0.25,
+      "cost_usd": 0,
+      "note": "Page-level evidence hit; multi-hop complete requires all gold pages. Citation support needs original review."
+    },
+    {
+      "alpha": 1.0,
+      "budget_chars_per_search": 2400,
+      "queries": 18,
+      "Hit@1": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Evidence Hit@3": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Complete Evidence@3": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Context Evidence Rate": {
+        "n": 11,
+        "N": 15,
+        "rate": 0.7333333333333333
+      },
+      "median_ms": 0.24,
+      "cost_usd": 0,
+      "note": "Page-level evidence hit; multi-hop complete requires all gold pages. Citation support needs original review."
+    },
+    {
+      "alpha": 1.0,
+      "budget_chars_per_search": 4800,
+      "queries": 18,
+      "Hit@1": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Evidence Hit@3": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Complete Evidence@3": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "Context Evidence Rate": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "median_ms": 0.24,
+      "cost_usd": 0,
+      "note": "Page-level evidence hit; multi-hop complete requires all gold pages. Citation support needs original review."
+    }
+  ]
+}

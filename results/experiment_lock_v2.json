@@ -1,0 +1,22 @@
+{
+  "locked_at": "2026-11-14T11:52:08.277602+07:00",
+  "files": {
+    "src/agent.py": "8c9ba39f903dbc09a0d4476854ca11a0838071b024a8704fcfa485f1bf492bf1",
+    "src/bonus.py": "13dff5fe04582a19b84549e1628e105a78dfdb65ed21595f82de74317601eb45",
+    "src/retrieval.py": "7f91fd04d1ba5334eb8035f9963534349b72f0265fc8618870b160f9ce2dd9a8",
+    "src/model.py": "973f396a7b32bc61872b209994554a69ecc6d2f3a0dcee93222ec46f8e8be34e",
+    "src/common.py": "7466b584d1b6d15b37dddc862e9eec7e55b48b2f7de40f32bcbd2705ce674fbf",
+    "configs/kanji_system_v1.txt": "29e6f06e44bab86c9e5c868e40e7f272c1b0805b4b06241a35d732bbf4e4e260",
+    "configs/basic-selected.json": "e2643fba16144791a609bef7035496a7e1e519466539b488e390ba2088e1139a",
+    "configs/bonus-selected.json": "a2a4cc11591f517977222003fdc5b40aa02481e8ce803a9804c03ba62bd31a5a",
+    "configs/experiments.json": "eda20d5f4273f4e63930eeefc42b89bf5c307320c9ed1785b6c1faa08d0770a8",
+    "benchmark/frozen.json": "d7651f91b009ba4b175f4a13c432075cdb546c99c591f67f3abb7598fdcba251",
+    "benchmark/frozen_v2.json": "4a987ae9fe3bac0a1391caea9a3d8fb85f34518f2f1051786d7e37b51e6b7883",
+    "data/private/bonus_pages.json": "c99d1bce63bd0d78d3ba5ef115a1d68778d9aaf7ad47eb542aa48420d105c3e3",
+    "scripts/benchmark.py": "205f898274ed96f0a06569f11f9860f1d56f57baac3222312d3b012e53c6f410"
+  },
+  "policy": "V1 test retained (26/30) as error-analysis data. V2 is a fresh 30-case holdout frozen before execution. No semantic changes after this lock.",
+  "model": "gpt-5.4-mini-2026-03-17",
+  "kanji_compatibility": "Kanji system prompt is exactly the v1 tested prompt; only report uses additional consistency instructions.",
+  "original_kanji_prompt_source": "Reconstructed original agent source SHA matched v1 experiment_lock before extracting prompt."
+}

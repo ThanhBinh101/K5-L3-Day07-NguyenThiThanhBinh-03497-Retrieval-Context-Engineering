@@ -1,0 +1,32 @@
+{
+  "basic": {
+    "created_at": "2026-11-14T11:36:59.933255+07:00",
+    "alpha": 0.5,
+    "budget": 2400,
+    "top_k": 5,
+    "max_searches": 4,
+    "chosen_on": "dev",
+    "rule": "On dev: maximize Evidence Hit@3, then Hit@1, then context evidence rate, then prefer alpha 0.5, then smaller alpha. Select agent context budget using dev grounded answer grades and latency. Never use test for tuning.",
+    "benchmark_hash": "1cdd3199619f9f4c16200f6943d9986c084c2de681a5069253572578fe51b552",
+    "agent_validation": "Dev review: baseline, hybrid 2400, hybrid 4800 all answer 15/15 correctly; choose 2400 for lower token use and fewer redundant citations. Raw retrieval selects alpha .5.",
+    "finalized_on_dev": true,
+    "model": "gpt-5.4-mini-2026-03-17",
+    "finalized_at": "2026-11-14T11:45:46.309108+07:00",
+    "source_extraction_sha256": "36763f504947c7e3417dfd2e88ccb0000e56727e93f3557926abab4dad011217"
+  },
+  "bonus": {
+    "created_at": "2026-11-14T11:39:22.835953+07:00",
+    "alpha": 0.5,
+    "budget": 4800,
+    "top_k": 5,
+    "max_searches": 4,
+    "chosen_on": "dev",
+    "rule": "On dev: maximize Evidence Hit@3, then Hit@1, then context evidence rate, then prefer alpha 0.5, then smaller alpha. Select agent context budget using dev grounded answer grades and latency. Never use test for tuning.",
+    "benchmark_hash": "f3e4ac4c05108e58a1bb0952515c0cd9820dc28db4593773bee8fe9f0510314f",
+    "agent_validation": "vision-v2 dev original-source review: 15 answerable correct with supporting citations; 3 missing-evidence questions correctly decline to provide unsupported requested data. Report answers require original-page vision. alpha .5 and per-search budget 4800 selected on dev.",
+    "model": "gpt-5.4-mini-2026-03-17",
+    "finalized_on_dev": true,
+    "finalized_at": "2026-11-14T11:45:46.311544+07:00",
+    "source_extraction_sha256": "c99d1bce63bd0d78d3ba5ef115a1d68778d9aaf7ad47eb542aa48420d105c3e3"
+  }
+}

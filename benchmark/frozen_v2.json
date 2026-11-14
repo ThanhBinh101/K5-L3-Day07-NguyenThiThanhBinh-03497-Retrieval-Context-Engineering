@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-11-14T11:49:49.450719+07:00",
+  "file": "benchmark/private/bonus_test_v2.json",
+  "sha256": "c673f0eacad299d65cfcb8ac6dd1a784cb3155b9691cc51c8aa477dd8fc91c71",
+  "counts": {
+    "table": 6,
+    "image": 5,
+    "chart": 5,
+    "multihop": 4,
+    "text": 4,
+    "unanswerable": 6
+  },
+  "reason": "V1 test inspected for errors: contradictory yes/no openings, ambiguous color wording and incomparable-unit question. V1 retained in full; v2 is new independent holdout, not a rerun or paraphrase set.",
+  "no_test_tuning": "This file frozen before v2 retrieval or agent run. V1 failures remain reported."
+}

@@ -1,0 +1,7 @@
+numpy>=1.26,<3
+qdrant-client>=1.15,<2
+sentence-transformers>=5,<7
+pypdf>=6,<8
+pillow>=11,<14
+scipy>=1.12,<2
+certifi>=2025.1

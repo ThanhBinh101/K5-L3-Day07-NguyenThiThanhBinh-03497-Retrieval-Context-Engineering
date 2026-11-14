@@ -1,0 +1,16 @@
+{
+  "created_at": "2026-11-14T11:38:52.478174+07:00",
+  "suite": "basic",
+  "split": "dev",
+  "config": "selected",
+  "alpha": 0.5,
+  "budget": 4800,
+  "max_searches": 4,
+  "queries": 17,
+  "errors": 0,
+  "total_tokens": 64686,
+  "median_seconds": 2.77167,
+  "cost_usd": null,
+  "cost_note": "See provider usage; no price estimate without verified input/output/cache/image rates.",
+  "quality": "Pending original-source review, never inferred from status alone."
+}

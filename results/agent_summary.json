@@ -1,0 +1,371 @@
+{
+  "basic_dev": {
+    "baseline": {
+      "queries": 17,
+      "pass": {
+        "n": 17,
+        "N": 17,
+        "rate": 1.0
+      },
+      "answer_grade_counts": {
+        "2": 15
+      },
+      "answer_grade_mean_over_2": 1.0,
+      "context_grade_counts": {
+        "2": 15
+      },
+      "citation_support": {
+        "n": 20,
+        "N": 20,
+        "rate": 1.0
+      },
+      "answers_with_citations": 15,
+      "answered": 15,
+      "abstention": {
+        "n": 2,
+        "N": 2,
+        "rate": 1.0
+      },
+      "answerable_false_abstention": 0,
+      "errors": 0,
+      "tool_use": {
+        "n": 17,
+        "N": 17
+      },
+      "search_call_distribution": {
+        "1": 15,
+        "2": 2
+      },
+      "total_tokens": 40952,
+      "estimated_cost_usd": 0.038049,
+      "pricing": {
+        "model": "gpt-5.4-mini",
+        "input_per_million": 0.75,
+        "cached_input_per_million": 0.075,
+        "output_per_million": 4.5,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+        "verified_date": "2026-11-14",
+        "basis": "Standard API estimate from actual prompt/completion/cached usage, including image input tokens reported by API; not invoice."
+      },
+      "reviewer_type": "AI-assisted original-source review by Codex; not a student/human sign-off.",
+      "suite": "basic",
+      "split": "dev",
+      "run": "baseline",
+      "test_version": "v1",
+      "median_seconds": 2.64881,
+      "review_file": "results/private/reviews/basic-dev-baseline.json",
+      "groups": {
+        "meaning": {
+          "n": 5,
+          "N": 5
+        },
+        "memory": {
+          "n": 5,
+          "N": 5
+        },
+        "unanswerable": {
+          "n": 2,
+          "N": 2
+        },
+        "word": {
+          "n": 5,
+          "N": 5
+        }
+      }
+    },
+    "small": {
+      "queries": 17,
+      "pass": {
+        "n": 17,
+        "N": 17,
+        "rate": 1.0
+      },
+      "answer_grade_counts": {
+        "2": 15
+      },
+      "answer_grade_mean_over_2": 1.0,
+      "context_grade_counts": {
+        "2": 15
+      },
+      "citation_support": {
+        "n": 20,
+        "N": 20,
+        "rate": 1.0
+      },
+      "answers_with_citations": 15,
+      "answered": 15,
+      "abstention": {
+        "n": 2,
+        "N": 2,
+        "rate": 1.0
+      },
+      "answerable_false_abstention": 0,
+      "errors": 0,
+      "tool_use": {
+        "n": 17,
+        "N": 17
+      },
+      "search_call_distribution": {
+        "1": 14,
+        "2": 3
+      },
+      "total_tokens": 52023,
+      "estimated_cost_usd": 0.04339,
+      "pricing": {
+        "model": "gpt-5.4-mini",
+        "input_per_million": 0.75,
+        "cached_input_per_million": 0.075,
+        "output_per_million": 4.5,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+        "verified_date": "2026-11-14",
+        "basis": "Standard API estimate from actual prompt/completion/cached usage, including image input tokens reported by API; not invoice."
+      },
+      "reviewer_type": "AI-assisted original-source review by Codex; not a student/human sign-off.",
+      "suite": "basic",
+      "split": "dev",
+      "run": "small",
+      "test_version": "v1",
+      "median_seconds": 2.68086,
+      "review_file": "results/private/reviews/basic-dev-small.json",
+      "groups": {
+        "meaning": {
+          "n": 5,
+          "N": 5
+        },
+        "memory": {
+          "n": 5,
+          "N": 5
+        },
+        "unanswerable": {
+          "n": 2,
+          "N": 2
+        },
+        "word": {
+          "n": 5,
+          "N": 5
+        }
+      }
+    },
+    "selected": {
+      "queries": 17,
+      "pass": {
+        "n": 17,
+        "N": 17,
+        "rate": 1.0
+      },
+      "answer_grade_counts": {
+        "2": 15
+      },
+      "answer_grade_mean_over_2": 1.0,
+      "context_grade_counts": {
+        "2": 15
+      },
+      "citation_support": {
+        "n": 21,
+        "N": 22,
+        "rate": 0.9545454545454546
+      },
+      "answers_with_citations": 15,
+      "answered": 15,
+      "abstention": {
+        "n": 2,
+        "N": 2,
+        "rate": 1.0
+      },
+      "answerable_false_abstention": 0,
+      "errors": 0,
+      "tool_use": {
+        "n": 17,
+        "N": 17
+      },
+      "search_call_distribution": {
+        "1": 16,
+        "5": 1
+      },
+      "total_tokens": 64686,
+      "estimated_cost_usd": 0.039893,
+      "pricing": {
+        "model": "gpt-5.4-mini",
+        "input_per_million": 0.75,
+        "cached_input_per_million": 0.075,
+        "output_per_million": 4.5,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+        "verified_date": "2026-11-14",
+        "basis": "Standard API estimate from actual prompt/completion/cached usage, including image input tokens reported by API; not invoice."
+      },
+      "reviewer_type": "AI-assisted original-source review by Codex; not a student/human sign-off.",
+      "suite": "basic",
+      "split": "dev",
+      "run": "selected",
+      "test_version": "v1",
+      "median_seconds": 2.77167,
+      "review_file": "results/private/reviews/basic-dev-selected.json",
+      "groups": {
+        "meaning": {
+          "n": 5,
+          "N": 5
+        },
+        "memory": {
+          "n": 5,
+          "N": 5
+        },
+        "unanswerable": {
+          "n": 2,
+          "N": 2
+        },
+        "word": {
+          "n": 5,
+          "N": 5
+        }
+      }
+    }
+  },
+  "basic_test": {
+    "baseline": {
+      "queries": 7,
+      "pass": {
+        "n": 7,
+        "N": 7,
+        "rate": 1.0
+      },
+      "answer_grade_counts": {
+        "2": 5
+      },
+      "answer_grade_mean_over_2": 1.0,
+      "context_grade_counts": {
+        "2": 5
+      },
+      "citation_support": {
+        "n": 10,
+        "N": 10,
+        "rate": 1.0
+      },
+      "answers_with_citations": 5,
+      "answered": 5,
+      "abstention": {
+        "n": 2,
+        "N": 2,
+        "rate": 1.0
+      },
+      "answerable_false_abstention": 0,
+      "errors": 0,
+      "tool_use": {
+        "n": 7,
+        "N": 7
+      },
+      "search_call_distribution": {
+        "1": 6,
+        "4": 1
+      },
+      "total_tokens": 24980,
+      "estimated_cost_usd": 0.023136,
+      "pricing": {
+        "model": "gpt-5.4-mini",
+        "input_per_million": 0.75,
+        "cached_input_per_million": 0.075,
+        "output_per_million": 4.5,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+        "verified_date": "2026-11-14",
+        "basis": "Standard API estimate from actual prompt/completion/cached usage, including image input tokens reported by API; not invoice."
+      },
+      "reviewer_type": "AI-assisted original-source review by Codex; not a student/human sign-off.",
+      "suite": "basic",
+      "split": "test",
+      "run": "baseline",
+      "test_version": "v1",
+      "median_seconds": 3.46931,
+      "review_file": "results/private/reviews/basic-test-baseline.json",
+      "groups": {
+        "meaning": {
+          "n": 1,
+          "N": 1
+        },
+        "memory": {
+          "n": 2,
+          "N": 2
+        },
+        "unanswerable": {
+          "n": 2,
+          "N": 2
+        },
+        "word": {
+          "n": 2,
+          "N": 2
+        }
+      }
+    },
+    "selected": {
+      "queries": 7,
+      "pass": {
+        "n": 7,
+        "N": 7,
+        "rate": 1.0
+      },
+      "answer_grade_counts": {
+        "2": 5
+      },
+      "answer_grade_mean_over_2": 1.0,
+      "context_grade_counts": {
+        "2": 5
+      },
+      "citation_support": {
+        "n": 11,
+        "N": 11,
+        "rate": 1.0
+      },
+      "answers_with_citations": 5,
+      "answered": 5,
+      "abstention": {
+        "n": 2,
+        "N": 2,
+        "rate": 1.0
+      },
+      "answerable_false_abstention": 0,
+      "errors": 0,
+      "tool_use": {
+        "n": 7,
+        "N": 7
+      },
+      "search_call_distribution": {
+        "1": 6,
+        "2": 1
+      },
+      "total_tokens": 34287,
+      "estimated_cost_usd": 0.029891,
+      "pricing": {
+        "model": "gpt-5.4-mini",
+        "input_per_million": 0.75,
+        "cached_input_per_million": 0.075,
+        "output_per_million": 4.5,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+        "verified_date": "2026-11-14",
+        "basis": "Standard API estimate from actual prompt/completion/cached usage, including image input tokens reported by API; not invoice."
+      },
+      "reviewer_type": "AI-assisted original-source review by Codex; not a student/human sign-off.",
+      "suite": "basic",
+      "split": "test",
+      "run": "selected",
+      "test_version": "v1",
+      "median_seconds": 4.77613,
+      "review_file": "results/private/reviews/basic-test-selected.json",
+      "groups": {
+        "meaning": {
+          "n": 1,
+          "N": 1
+        },
+        "memory": {
+          "n": 2,
+          "N": 2
+        },
+        "unanswerable": {
+          "n": 2,
+          "N": 2
+        },
+        "word": {
+          "n": 2,
+          "N": 2
+        }
+      }
+    }
+  }
+}

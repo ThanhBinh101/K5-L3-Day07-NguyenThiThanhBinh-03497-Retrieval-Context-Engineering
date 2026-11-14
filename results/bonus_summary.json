@@ -1,0 +1,264 @@
+{
+  "status": "Đạt ngưỡng benchmark bonus",
+  "final_test_version": "v2",
+  "dev": {
+    "queries": 18,
+    "pass": {
+      "n": 18,
+      "N": 18,
+      "rate": 1.0
+    },
+    "answer_grade_counts": {
+      "2": 15
+    },
+    "answer_grade_mean_over_2": 1.0,
+    "context_grade_counts": {
+      "2": 15
+    },
+    "citation_support": {
+      "n": 24,
+      "N": 24,
+      "rate": 1.0
+    },
+    "answers_with_citations": 17,
+    "answered": 17,
+    "abstention": {
+      "n": 3,
+      "N": 3,
+      "rate": 1.0
+    },
+    "answerable_false_abstention": 0,
+    "errors": 0,
+    "tool_use": {
+      "n": 18,
+      "N": 18
+    },
+    "search_call_distribution": {
+      "1": 11,
+      "2": 5,
+      "3": 1,
+      "4": 1
+    },
+    "total_tokens": 168164,
+    "estimated_cost_usd": 0.124332,
+    "pricing": {
+      "model": "gpt-5.4-mini",
+      "input_per_million": 0.75,
+      "cached_input_per_million": 0.075,
+      "output_per_million": 4.5,
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+      "verified_date": "2026-11-14",
+      "basis": "Standard API estimate from actual prompt/completion/cached usage, including image input tokens reported by API; not invoice."
+    },
+    "reviewer_type": "AI-assisted original-source review by Codex; not a student/human sign-off.",
+    "suite": "bonus",
+    "split": "dev",
+    "run": "vision-v2",
+    "test_version": "v1",
+    "median_seconds": 5.565875,
+    "review_file": "results/private/reviews/bonus-dev-vision-v2.json",
+    "groups": {
+      "chart": {
+        "n": 3,
+        "N": 3
+      },
+      "image": {
+        "n": 3,
+        "N": 3
+      },
+      "multihop": {
+        "n": 3,
+        "N": 3
+      },
+      "table": {
+        "n": 3,
+        "N": 3
+      },
+      "text": {
+        "n": 3,
+        "N": 3
+      },
+      "unanswerable": {
+        "n": 3,
+        "N": 3
+      }
+    }
+  },
+  "test_v1_retained": {
+    "queries": 30,
+    "pass": {
+      "n": 26,
+      "N": 30,
+      "rate": 0.8666666666666667
+    },
+    "answer_grade_counts": {
+      "2": 20,
+      "1": 4
+    },
+    "answer_grade_mean_over_2": 0.9166666666666666,
+    "context_grade_counts": {
+      "2": 24
+    },
+    "citation_support": {
+      "n": 40,
+      "N": 42,
+      "rate": 0.9523809523809523
+    },
+    "answers_with_citations": 24,
+    "answered": 24,
+    "abstention": {
+      "n": 6,
+      "N": 6,
+      "rate": 1.0
+    },
+    "answerable_false_abstention": 0,
+    "errors": 0,
+    "tool_use": {
+      "n": 30,
+      "N": 30
+    },
+    "search_call_distribution": {
+      "1": 14,
+      "3": 2,
+      "2": 9,
+      "4": 1,
+      "6": 1,
+      "5": 3
+    },
+    "total_tokens": 296036,
+    "estimated_cost_usd": 0.218494,
+    "pricing": {
+      "model": "gpt-5.4-mini",
+      "input_per_million": 0.75,
+      "cached_input_per_million": 0.075,
+      "output_per_million": 4.5,
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+      "verified_date": "2026-11-14",
+      "basis": "Standard API estimate from actual prompt/completion/cached usage, including image input tokens reported by API; not invoice."
+    },
+    "reviewer_type": "AI-assisted original-source review by Codex; not a student/human sign-off.",
+    "suite": "bonus",
+    "split": "test",
+    "run": "selected",
+    "test_version": "v1",
+    "median_seconds": 5.32873,
+    "review_file": "results/private/reviews/bonus-test-selected.json",
+    "groups": {
+      "chart": {
+        "n": 5,
+        "N": 5
+      },
+      "image": {
+        "n": 4,
+        "N": 5
+      },
+      "multihop": {
+        "n": 3,
+        "N": 4
+      },
+      "table": {
+        "n": 6,
+        "N": 6
+      },
+      "text": {
+        "n": 2,
+        "N": 4
+      },
+      "unanswerable": {
+        "n": 6,
+        "N": 6
+      }
+    }
+  },
+  "test": {
+    "queries": 30,
+    "pass": {
+      "n": 29,
+      "N": 30,
+      "rate": 0.9666666666666667
+    },
+    "answer_grade_counts": {
+      "2": 23,
+      "0": 1
+    },
+    "answer_grade_mean_over_2": 0.9583333333333334,
+    "context_grade_counts": {
+      "2": 23,
+      "0": 1
+    },
+    "citation_support": {
+      "n": 41,
+      "N": 42,
+      "rate": 0.9761904761904762
+    },
+    "answers_with_citations": 23,
+    "answered": 23,
+    "abstention": {
+      "n": 6,
+      "N": 6,
+      "rate": 1.0
+    },
+    "answerable_false_abstention": 1,
+    "errors": 0,
+    "tool_use": {
+      "n": 30,
+      "N": 30
+    },
+    "search_call_distribution": {
+      "3": 4,
+      "5": 3,
+      "1": 13,
+      "2": 9,
+      "4": 1
+    },
+    "total_tokens": 380399,
+    "estimated_cost_usd": 0.238032,
+    "pricing": {
+      "model": "gpt-5.4-mini",
+      "input_per_million": 0.75,
+      "cached_input_per_million": 0.075,
+      "output_per_million": 4.5,
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+      "verified_date": "2026-11-14",
+      "basis": "Standard API estimate from actual prompt/completion/cached usage, including image input tokens reported by API; not invoice."
+    },
+    "reviewer_type": "AI-assisted original-source review by Codex; not a student/human sign-off.",
+    "suite": "bonus",
+    "split": "test",
+    "run": "selected",
+    "test_version": "v2",
+    "median_seconds": 6.157425,
+    "review_file": "results/private/reviews/bonus-test-v2-selected.json",
+    "groups": {
+      "chart": {
+        "n": 5,
+        "N": 5
+      },
+      "image": {
+        "n": 5,
+        "N": 5
+      },
+      "multihop": {
+        "n": 4,
+        "N": 4
+      },
+      "table": {
+        "n": 5,
+        "N": 6
+      },
+      "text": {
+        "n": 4,
+        "N": 4
+      },
+      "unanswerable": {
+        "n": 6,
+        "N": 6
+      }
+    }
+  },
+  "threshold": 0.9,
+  "threshold_met": true,
+  "all_cases_in_denominator": true,
+  "independence": "V1 inspected and used for error analysis; v2 fresh questions locked before execution. V1 is NOT independent for final revised pipeline.",
+  "review_notice": "AI-assisted original-source review, not student/human sign-off; instructor assigns final grade."
+}

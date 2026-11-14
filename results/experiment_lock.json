@@ -1,0 +1,18 @@
+{
+  "locked_at": "2026-11-14T11:45:46.368354+07:00",
+  "policy": "All tuning on dev completed; no test has been run. Any semantic changes after this lock require a fresh independent test set.",
+  "files": {
+    "src/agent.py": "915108c78abd4c8249f10dc4c404c5f0db8dfb47d8e52425d60a4095c28dad8d",
+    "src/bonus.py": "13dff5fe04582a19b84549e1628e105a78dfdb65ed21595f82de74317601eb45",
+    "src/retrieval.py": "7f91fd04d1ba5334eb8035f9963534349b72f0265fc8618870b160f9ce2dd9a8",
+    "src/model.py": "973f396a7b32bc61872b209994554a69ecc6d2f3a0dcee93222ec46f8e8be34e",
+    "src/common.py": "7466b584d1b6d15b37dddc862e9eec7e55b48b2f7de40f32bcbd2705ce674fbf",
+    "configs/basic-selected.json": "e2643fba16144791a609bef7035496a7e1e519466539b488e390ba2088e1139a",
+    "configs/bonus-selected.json": "a2a4cc11591f517977222003fdc5b40aa02481e8ce803a9804c03ba62bd31a5a",
+    "configs/experiments.json": "eda20d5f4273f4e63930eeefc42b89bf5c307320c9ed1785b6c1faa08d0770a8",
+    "benchmark/frozen.json": "d7651f91b009ba4b175f4a13c432075cdb546c99c591f67f3abb7598fdcba251",
+    "data/private/bonus_pages.json": "c99d1bce63bd0d78d3ba5ef115a1d68778d9aaf7ad47eb542aa48420d105c3e3",
+    "scripts/benchmark.py": "77afb8cd037342fff95e8752d63081fd71dbdc2b8340c2a565b4d99137aeaceb"
+  },
+  "model": "gpt-5.4-mini-2026-03-17"
+}

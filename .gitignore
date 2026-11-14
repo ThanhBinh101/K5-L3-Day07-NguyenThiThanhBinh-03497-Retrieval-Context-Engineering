@@ -9,3 +9,17 @@ __pycache__/
 # Local datasets and generated output; share permitted artifacts deliberately
 starter/data/
 starter/results/
+
+# Private source material and local model/database
+.local/
+data/private/
+results/private/
+benchmark/private/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.venv/
+results/server.log
+output/

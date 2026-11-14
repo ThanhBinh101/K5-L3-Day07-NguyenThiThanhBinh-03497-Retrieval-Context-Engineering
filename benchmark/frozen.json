@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-11-14T11:35:23.394983+07:00",
+  "source_kanji_sha256": "0d720e9a79d6b86ca74326083d7c1bb87dc2a245c5f7c4e0e44e4a7f15bd5fa5",
+  "source_bonus_sha256": "1b3e45fcc9feb0e9509075e1ba1088ec17317e76c7130ac9ea322bdd0646c7a8",
+  "files": {
+    "basic": "1cdd3199619f9f4c16200f6943d9986c084c2de681a5069253572578fe51b552",
+    "bonus": "f3e4ac4c05108e58a1bb0952515c0cd9820dc28db4593773bee8fe9f0510314f"
+  },
+  "counts": {
+    "basic": {
+      "dev": 17,
+      "test": 7
+    },
+    "bonus": {
+      "dev": 18,
+      "test": 30
+    }
+  },
+  "policy": "New Day 07 cases; test fixed before any retrieval/agent benchmark. Gold loaded only by evaluation. Any tuning after test requires a fresh test set."
+}

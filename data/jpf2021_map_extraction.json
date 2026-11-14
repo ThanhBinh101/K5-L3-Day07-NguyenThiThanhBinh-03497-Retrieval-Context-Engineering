@@ -1,0 +1,11 @@
+{
+  "source_sha256": "1b3e45fcc9feb0e9509075e1ba1088ec17317e76c7130ac9ea322bdd0646c7a8",
+  "source": "https://www.jpf.go.jp/e/project/japanese/survey/result/dl/survey2021/All_contents_r2.pdf",
+  "attribution": "Copyright Japan Foundation. Created by editing the Survey Report on Japanese-Language Education Abroad (the Japan Foundation).",
+  "provenance": "Vision extraction of both complete visible map halves, before v2 evaluation. Checked by Codex AI against original rendered pages, not human sign-off. No benchmark gold used.",
+  "reason": "Native extraction included off-page text from shared map artwork; these transcriptions retain only content visible on each physical page.",
+  "pages": {
+    "2": "Title: Number of Japanese-Language Learners by Country / Region\nVisible country/region names and numeric learner labels:\nBelgium 1,196\nUnited Kingdom 14,631\nIreland 3,084\nSwitzerland 2,791\nFrance 29,569\nSpain 9,383\nGermany 11,687\nNetherlands 1,599\nItaly 8,387\nCzech 1,304\nSweden 1,471\nFinland 1,584\nHungary 1,815\nPoland 5,008\nRomania 1,892\nUkraine 2,052\nBulgaria 1,207\nTurkey 3,305\nEgypt 3,514\nKenya 1,726\nMadagascar 2,413\nRussia 12,426\nMongolia 13,334\nUzbekistan 3,579\nTurkmenistan 8,865\nKyrgyz 1,300\nChina 1,057,318\nKorea 470,334\nMacau 1,550\nHong Kong 27,665\nTaiwan 143,632\nPhilippine 44,457\nGuam 1,076\nIndia 36,015\nNepal 9,646\nBangladesh 7,418\nMyanmar 19,124\nThailand 183,957\nLaos 3,118\nVietnam 169,582\nCambodia 3,874\nMalaysia 38,129\nSingapore 10,837\nIndonesia 711,732\nSri Lanka 9,746\nAustralia 415,348\n\nLegend color categories visible: none visible in this image.",
+    "3": "Map title: not visible in the image.\n\nVisible country/region names and learner labels:\n- Canada — 18,293\n- United States of America — 161,402\n- Mexico — 14,552\n- Colombia — 2,024\n- Peru — 3,761\n- Chile — 1,096\n- Argentina — 4,486\n- Paraguay — 1,262\n- Brazil — 20,732\n- New Caledonia — 3,426\n- New Zealand — 28,072\n\nLegend:\n- Dark green: More than 500,000 learners\n- Medium green: 100,000 – 499,999 learners\n- Yellow-green: 10,000 – 99,999 learners\n- Yellow: 1,000 – 9,999 learners\n- Very pale yellow-green: Less than 1,000 learners\n- Light gray: No Japanese-language education"
+  }
+}

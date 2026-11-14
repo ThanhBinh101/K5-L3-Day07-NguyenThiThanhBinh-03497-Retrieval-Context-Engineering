@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-11-14T11:56:01.548952+07:00",
+  "unique_agent_runs": 185,
+  "estimated_agent_cost_usd": 0.979843,
+  "agent_total_tokens": 1371492,
+  "pricing": {
+    "model": "gpt-5.4-mini",
+    "input_per_million": 0.75,
+    "cached_input_per_million": 0.075,
+    "output_per_million": 4.5,
+    "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+    "verified_date": "2026-11-14",
+    "basis": "Standard API estimate from actual prompt/completion/cached usage, including image input tokens reported by API; not invoice."
+  },
+  "excluded": "API connectivity check, map OCR extraction, and any external app/provider overhead are excluded from agent-run subtotal. Raw map usage retained separately.",
+  "note": "Estimates from per-call API usage, not actual account invoice; prompt caching changes cost comparisons."
+}

@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "checks": [
+    "alpha endpoints and 0.1 description",
+    "one search input",
+    "Kanji search and vocabulary",
+    "source page dialog",
+    "11 alpha levels and row selection",
+    "real API answer with citation",
+    "synthetic KanjiVG handwriting top-1 and illustration",
+    "390px viewport no horizontal overflow",
+    "report search and lesson control",
+    "invalid alpha rejection",
+    "foreign Origin rejection",
+    "secret route inaccessible",
+    "no browser errors"
+  ],
+  "handwriting_limit": "Synthetic template check, not a real-user handwriting benchmark.",
+  "screenshots": [
+    "results/private/ui-desktop-empty.png",
+    "results/private/ui-desktop-search.png",
+    "results/private/ui-handwriting.png",
+    "results/private/ui-mobile.png"
+  ],
+  "timestamp": "2026-11-14T04:55:34.550Z"
+}

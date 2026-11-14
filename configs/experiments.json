@@ -1,0 +1,8 @@
+{
+  "alphas": [0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1],
+  "top_k": 3,
+  "context_budget_chars": [2400,4800],
+  "selection_rule": "On dev: maximize Evidence Hit@3, then Hit@1, then context evidence rate, then prefer alpha 0.5, then smaller alpha. Select agent context budget using dev grounded answer grades and latency. Never use test for tuning.",
+  "baseline": {"alpha":0,"top_k":3,"context_budget_chars":2400},
+  "improvement_hypotheses": ["Dense complements lexical Vietnamese paraphrases; sweep alpha on dev.","A larger context budget and second search can recover missing multi-hop evidence; evaluate on dev."]
+}

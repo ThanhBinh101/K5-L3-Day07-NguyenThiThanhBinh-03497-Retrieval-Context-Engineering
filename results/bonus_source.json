@@ -1,0 +1,28 @@
+{
+  "title": "Survey Report on Japanese-Language Education Abroad 2021",
+  "author": "Japan Foundation",
+  "version": "All_contents_r2.pdf",
+  "url": "https://www.jpf.go.jp/e/project/japanese/survey/result/dl/survey2021/All_contents_r2.pdf",
+  "landing_page": "https://www.jpf.go.jp/e/project/japanese/survey/result/survey21.html",
+  "accessed_at": "2026-11-14T11:27:58.510407+07:00",
+  "pages": 105,
+  "sha256": "1b3e45fcc9feb0e9509075e1ba1088ec17317e76c7130ac9ea322bdd0646c7a8",
+  "permission": "Survey data free to use with citation per publisher Guidelines for Use.",
+  "attribution": "Copyright Japan Foundation. Created by editing the Survey Report on Japanese-Language Education Abroad (the Japan Foundation).",
+  "indexed_pages": 105,
+  "empty_pages": [
+    1,
+    4
+  ],
+  "visual_pipeline": "Native layout text on every nonblank page; vision transcription of both map halves after detecting off-page text artifacts; on-demand original-page vision required for every answerable report answer.",
+  "page_numbering": "Citations use physical PDF pages (printed report page + 6).",
+  "limitations": "Native text extraction may interleave table cells; visual page verification required. Scanned images cannot be assumed correct from extracted text alone.",
+  "extraction_corrections": {
+    "pages": [
+      2,
+      3
+    ],
+    "reason": "Shared PDF map artwork contains text outside each half-page clipping area. Vision transcriptions indexed only visible content, verified against original images.",
+    "reviewer": "Codex AI; not human audit."
+  }
+}
